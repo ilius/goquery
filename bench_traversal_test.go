@@ -3,7 +3,7 @@ package goquery
 import (
 	"testing"
 
-	"github.com/andybalholm/cascadia"
+	"github.com/PuerkitoBio/goquery/cascadia"
 )
 
 func BenchmarkFind(b *testing.B) {

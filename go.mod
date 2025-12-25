@@ -1,4 +1,4 @@
-module github.com/PuerkitoBio/goquery
+module github.com/ilius/goquery
 
 require golang.org/x/net v0.48.0
 

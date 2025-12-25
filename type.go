@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/PuerkitoBio/goquery/cascadia"
+	"github.com/ilius/goquery/cascadia"
 	"golang.org/x/net/html"
 )
 

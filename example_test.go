@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/PuerkitoBio/goquery"
+	"github.com/ilius/goquery"
 )
 
 // This example scrapes the reviews shown on the home page of metalsucks.net.

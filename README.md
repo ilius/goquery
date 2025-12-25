@@ -1,8 +1,8 @@
 # goquery - a little like that j-thing, only in Go
 
-[![Build Status](https://github.com/PuerkitoBio/goquery/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/PuerkitoBio/goquery/actions)
-[![Go Reference](https://pkg.go.dev/badge/github.com/PuerkitoBio/goquery.svg)](https://pkg.go.dev/github.com/PuerkitoBio/goquery)
-[![Sourcegraph Badge](https://sourcegraph.com/github.com/PuerkitoBio/goquery/-/badge.svg)](https://sourcegraph.com/github.com/PuerkitoBio/goquery?badge)
+[![Build Status](https://github.com/ilius/goquery/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/ilius/goquery/actions)
+[![Go Reference](https://pkg.go.dev/badge/github.com/ilius/goquery.svg)](https://pkg.go.dev/github.com/ilius/goquery)
+[![Sourcegraph Badge](https://sourcegraph.com/github.com/ilius/goquery/-/badge.svg)](https://sourcegraph.com/github.com/ilius/goquery?badge)
 
 goquery brings a syntax and a set of features similar to [jQuery][] to the [Go language][go]. It is based on Go's [net/html package][html] and the CSS Selector library [cascadia][]. Since the net/html parser returns nodes, and not a full-featured DOM tree, jQuery's stateful manipulation functions (like height(), css(), detach()) have been left off.
 
@@ -31,16 +31,16 @@ Required Go version:
 
 Ongoing goquery development is tested on the latest 2 versions of Go.
 
-    $ go get github.com/PuerkitoBio/goquery
+    $ go get github.com/ilius/goquery
 
 (optional) To run unit tests:
 
-    $ cd $GOPATH/src/github.com/PuerkitoBio/goquery
+    $ cd $GOPATH/src/github.com/ilius/goquery
     $ go test
 
 (optional) To run benchmarks (warning: it runs for a few minutes):
 
-    $ cd $GOPATH/src/github.com/PuerkitoBio/goquery
+    $ cd $GOPATH/src/github.com/ilius/goquery
     $ go test -bench=".*"
 
 ## Changelog
@@ -125,7 +125,7 @@ import (
   "log"
   "net/http"
 
-  "github.com/PuerkitoBio/goquery"
+  "github.com/ilius/goquery"
 )
 
 func ExampleScrape() {
@@ -204,11 +204,11 @@ The [BSD 3-Clause license][bsd], the same as the [Go language][golic]. Cascadia'
 [bsd]: https://opensource.org/licenses/BSD-3-Clause
 [golic]: https://go.dev/LICENSE
 [caslic]: https://github.com/andybalholm/cascadia/blob/master/LICENSE
-[doc]: https://pkg.go.dev/github.com/PuerkitoBio/goquery
+[doc]: https://pkg.go.dev/github.com/ilius/goquery
 [index]: https://api.jquery.com/index/
 [gonet]: https://github.com/golang/net/
 [html]: https://pkg.go.dev/golang.org/x/net/html
-[wiki]: https://github.com/PuerkitoBio/goquery/wiki/Tips-and-tricks
+[wiki]: https://github.com/ilius/goquery/wiki/Tips-and-tricks
 [thatguystone]: https://github.com/thatguystone
 [piotr]: https://github.com/piotrkowalczuk
 [goq]: https://github.com/andrewstuart/goq

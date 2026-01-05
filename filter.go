@@ -1,5 +1,7 @@
 package goquery
 
+import "slices"
+
 import "golang.org/x/net/html"
 
 // Filter reduces the set of matched elements to those that match the selector string.
@@ -95,12 +97,7 @@ func (s *Selection) HasMatcher(m Matcher) *Selection {
 func (s *Selection) HasNodes(nodes ...*html.Node) *Selection {
 	return s.FilterFunction(func(_ int, sel *Selection) bool {
 		// Add all nodes that contain one of the specified nodes
-		for _, n := range nodes {
-			if sel.Contains(n) {
-				return true
-			}
-		}
-		return false
+		return slices.ContainsFunc(nodes, sel.Contains)
 	})
 }
 

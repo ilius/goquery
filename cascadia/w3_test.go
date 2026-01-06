@@ -2,7 +2,6 @@ package cascadia
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"log"
 	"os"
 	"reflect"
@@ -12,7 +11,7 @@ import (
 )
 
 func TestInvalidSelectors(t *testing.T) {
-	c, err := ioutil.ReadFile("test_resources/invalid_selectors.json")
+	c, err := os.ReadFile("test_resources/invalid_selectors.json")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -58,7 +57,7 @@ func isEqual(m map[string]int, l []string) bool {
 }
 
 func loadValidSelectors(t *testing.T) []validSelector {
-	c, err := ioutil.ReadFile("test_resources/valid_selectors.json")
+	c, err := os.ReadFile("test_resources/valid_selectors.json")
 	if err != nil {
 		t.Fatal(err)
 	}
